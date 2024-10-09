@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
   setval(&a, 13);
   printf("a: %d\n", a);
 
-  int* b;
+  int* b = malloc(sizeof(int));
   setval(b, 4);
   printf("*b: %d\n", *b);
 }
